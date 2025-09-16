@@ -113,10 +113,7 @@ def main():
 
     # Lista aktualizacji
     updates = [
-        (["apt", "update"], "Aktualizacja repozytoriów APT", True),
-        (["apt", "upgrade", "-y"], "Aktualizacja pakietów APT", True),
-        (["apt", "autoremove", "-y"], "Usuwanie niepotrzebnych pakietów APT", True),
-        (["apt", "autoclean"], "Czyszczenie cache APT", True),
+        (["zypper", "update"], "Aktualizacja repozytoriów Zypper", True),
         (["flatpak", "update", "-y"], "Aktualizacja Flatpaka", False),
         (["fwupdmgr", "refresh"], "Odświeżanie firmware", True),
         (["fwupdmgr", "update"], "Instalacja aktualizacji firmware", True),
